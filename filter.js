@@ -7,3 +7,7 @@ const oddNumbers = numbers.filter((number) => number % 2 === 1);
 console.log(greaterThan10);
 console.log(evenNumbers);
 console.log(oddNumbers);
+
+const threeChar = ["Aam", "Kathal", "Komola", "Jam", "Lichu", "Mango"];
+const findThree = threeChar.filter((three) => three.length <= 3);
+console.log(findThree);
