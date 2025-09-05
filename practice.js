@@ -72,4 +72,74 @@ const products = [
 ];
 
 const findPrice = products.filter((products) => products.price > 100);
-console.log(findPrice);
+// console.log(findPrice);
+
+/**
+ * Task - 10 --> Get only the names from the users array.
+ */
+
+const users = [
+  { id: 1, name: "Alice", age: 22 },
+  { id: 2, name: "Bob", age: 17 },
+  { id: 3, name: "Charlie", age: 25 },
+];
+
+const getName = users.map((user) => user.name);
+// console.log(getName);
+
+/**
+ * Task - 11 -->  Return only the products that cost less than 100.
+ */
+
+const productsPrice = [
+  { id: 1, name: "Laptop", price: 1200 },
+  { id: 2, name: "Phone", price: 800 },
+  { id: 3, name: "Pen", price: 2 },
+];
+
+const getPrice = productsPrice.filter((products) => products.price < 100);
+// console.log(getPrice);
+
+/**
+ * Task - 12 --> Find the first student whose grade is "B".
+ */
+
+const students = [
+  { id: 1, name: "David", grade: "A" },
+  { id: 2, name: "Eve", grade: "C" },
+  { id: 3, name: "Frank", grade: "B" },
+];
+
+const getGrades = students.find((student) => student.grade === "B");
+// console.log(getGrades);
+
+/**
+ * Task - 13 --> Print each book title with its page count.
+ */
+
+const books = [
+  { title: "Book One", pages: 200 },
+  { title: "Book Two", pages: 150 },
+  { title: "Book Three", pages: 300 },
+];
+
+const bookNameAndPageCount = books.map(
+  (book) => `Book Name: ${book.title}, ${book.pages}, Pages`
+);
+
+// console.log(bookNameAndPageCount);
+
+/**
+ * Task 14 --> Create a new array of employee names with their salaries increased by 10%.
+ */
+
+const employees = [
+  { id: 1, name: "Sam", salary: 5000 },
+  { id: 2, name: "John", salary: 7000 },
+  { id: 3, name: "Sara", salary: 4000 },
+];
+
+const getNameSalaries = employees.map(
+  (employees) => `${employees.name}, ${(employees.salary * 1.1).toFixed(2)}`
+);
+console.log(getNameSalaries);
